@@ -1,7 +1,7 @@
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server import MCPServer
 
-mcp = FastMCP("First MCP Server")
+mcp = MCPServer("First MCP Server")
 
 @mcp.tool()
 def add_numbers(a: int, b: int) -> int:
